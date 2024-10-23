@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ElderWise</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #00a896;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 30px;
+            background-color: #028090;
+            color: white;
+            font-size: 1.2em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background-color: #026c75;
+        }
+
+        .features {
+            padding: 40px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .features h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .features p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .contact-section {
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .contact-section h3 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            padding: 10px 30px;
+            background-color: #00a896;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #028090;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #00a896;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ElderWise</h1>
+        <p>Bringing light to every moment of care</p>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h2>Welcome to ElderWise</h2>
+            <p>Your partner in compassionate care solutions</p>
+            <button class="cta-button" onclick="document.querySelector('.contact-section').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h3>Our Services</h3>
+        <p>We provide personalized care management solutions for individuals and families.</p>
+        <p>Empowering caregivers with resources, guidance, and technology for better care experiences.</p>
+    </section>
+
+    <section class="contact-section">
+        <h3>Contact Us</h3>
+        <div class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="How can we help?" rows="5"></textarea>
+            <button type="submit">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ElderWise. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
